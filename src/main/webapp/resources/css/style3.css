@@ -1,0 +1,366 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap);
+
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+:root {
+  /* ===== Colors ===== */
+	--body-color: #E4E9F7;
+	--sidebar-color: #FFF;
+  --primary-color: #695CFE;
+  --primary-color-white: #F6f5FF;
+  --toggle-color: #DDD;
+  --text-color: #070505;
+
+  /* ===== Transition ===== */
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+  	
+}
+
+/* Your existing CSS styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background: var(--body-color);
+    transition: var(--tran-05);
+}
+
+.navbar {
+    transition: var(--tran-05);
+}
+
+.navbar-brand img {
+    max-height: 50px; 
+    border-radius: 10px;
+}
+
+.navbar-nav .signup-link {
+    
+    background-color: var(--primary-color);
+    color: var(--sidebar-color) !important;
+    border-radius: 5px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    transition: var(--tran-02);
+}
+
+.navbar-nav .signup-link:hover {
+    background-color: var(--primary-color-white) !important;
+    border: 1px solid var(--primary-color);
+    color: var(--text-color) !important;
+    transition: var(--tran-02);
+}
+
+.custom-btn{
+    background-color: var(--primary-color);
+    color: var(--sidebar-color) !important;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px; /* top right bottom left */
+    margin: 10px;
+    transition: var(--tran-02);
+}
+
+.cta {
+    text-align: center; /* Center align the buttons */
+}
+
+.cta-btn {
+    display: inline-block; /* Display buttons in a line */
+    padding: 12px 24px; /* Adjust padding as needed */
+    margin: 10px; /* Add some margin between buttons */
+    font-size: 16px; /* Adjust font size */
+    font-weight: 500; /* Make text bold */
+    text-decoration: none; /* Remove default underline */
+    color: #fff; /* Text color */
+    background-color: var(--primary-color); /* Button background color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.cta-btn:hover {
+    background-color: var(--primary-color-white); /* Darker background color on hover */
+    color: var(--text-color); /* Text color on hover */
+    border: 1px solid var(--primary-color);
+    text-decoration: none;
+}
+
+
+.section {
+    padding-top: 80px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 1; /* Ensure content is above blobs */
+}
+
+.content {
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Ensure content is above blobs */
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #695CFE;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #695CFE;
+    margin-left: 20px;
+}
+
+.btn:hover {
+    background-color: #4d3cb9;
+}
+
+
+#home {
+    color: var(--text-color);
+    min-height: 100vh; /* Set the height to 100% of the viewport height */
+    
+}
+
+.contact-section{
+    padding-top: 0px !important;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content {
+    text-align: center;
+}
+
+.homebg {
+    position: absolute; /* Position it absolutely within its container */
+    top: 80%; /* Adjust top position as needed */
+    left: 0; /* Adjust left position as needed */
+    width: 100%; /* Take the full width of its container */
+    z-index: -1; /* Set a lower z-index to place it behind other content */
+}
+
+.homebg img {
+    width: 100%; /* Make sure the image takes the full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper rendering as a block element */
+    border: 5px solid var(--primary-color);
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-title {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+
+/* Contact Form Styling */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 20px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form button {
+    background-color: #695CFE;
+    border: none;
+}
+
+.contact-form button:hover {
+    background-color: #543dd0;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #695CFE;
+    padding: 40px 0;
+    color: #fff;
+}
+
+.social-icons li,
+.quick-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a,
+.quick-links a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.social-icons a:hover,
+.quick-links a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.quick-links {
+    list-style: none;
+    padding-left: 0;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+}
+.social-icons a:hover,
+.quick-links a:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Custom CSS for Bootstrap cards */
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    height: 170px; /* Adjust height as needed */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+#contact{
+	padding-top: 0 !important;
+	padding-bottom: 80px;
+}
+
+
+
